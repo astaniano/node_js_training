@@ -1,0 +1,7 @@
+// create new user
+curl -X "POST" "http://localhost:8001/user/create" \
+     -d '{"login": "vvvvv", "password":"vvvvv"}' \
+     -H "Content-Type: application/json" | python3 -m json.tool
+
+// get user 
+curl -X "POST" "http://localhost:8001/user/read/6" | python3 -m json.tool
